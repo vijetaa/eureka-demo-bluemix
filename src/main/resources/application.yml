@@ -1,7 +1,3 @@
-spring:
-  application:
-    name: eureka-server
-
 server:
   port: 8761
 
@@ -13,10 +9,7 @@ eureka:
     fetchRegistry: false
   serviceUrl:
     defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-  server:
-    waitTimeInMsWhenSyncEmpty: 0
-  
-logging:
+ logging:
   level:
     com.netflix: 'WARN'
     org.springframework.cloud: 'WARN'
